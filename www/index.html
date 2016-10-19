@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval' 'unsafe-inline' *; style-src 'self' 'unsafe-inline'; media-src *">
+    <title>Game</title>
+    <link href="css/index.css" rel="stylesheet" />
+        <!-- Cordova reference, this is added to your app when it's built. -->
+    <script src="cordova.js"></script>
+</head>
+<body>
+  <div id="game-canvas"></div>
+
+  <!-- Polyfill needed for platforms without Promise and Collection support -->
+  <script src="scripts/es6-shim.min.js"></script>
+  <script src="scripts/platformOverrides.js"></script>
+  <script src="scripts/phaser.min.js"></script>
+  <script src="build/app.js"></script>
+</body>
+</html>
